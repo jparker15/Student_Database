@@ -7,21 +7,23 @@ public class Student {
     public String id;
     public String firstName;
     public String lastName;
+    private int age;
 
     public Student() {
 
     }
 
-    public Student(String firstName, String lastName){
+    public Student(String firstName, String lastName,int age){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = age;
     }
 
     @Override
     public String toString(){
         return String.format(
-                "Student[id=%s, firstName='%s'm lastName='%s'",
-                id,firstName,lastName);
+                "Student[id=%s, firstName='%s'm lastName='%s' age='%s'",
+                id,firstName,lastName,age);
 
     }
 
